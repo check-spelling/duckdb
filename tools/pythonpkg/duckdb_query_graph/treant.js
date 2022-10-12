@@ -632,7 +632,7 @@
 			return pathString.join(" ");
 		},
 
-		// algorithm works from left to right, so previous processed node will be left neigbor of the next node
+		// algorithm works from left to right, so previous processed node will be left neighbor of the next node
 		setNeighbors: function(node, level) {
 
 			node.leftNeighborId = this.lastNodeOnLevel[level];
