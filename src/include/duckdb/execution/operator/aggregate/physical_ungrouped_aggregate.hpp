@@ -18,7 +18,7 @@
 namespace duckdb {
 
 //! PhysicalUngroupedAggregate is an aggregate operator that can only perform aggregates (1) without any groups, (2)
-//! without any DISTINCT aggregates, and (3) when all aggregates are combineable
+//! without any DISTINCT aggregates, and (3) when all aggregates are combinable
 class PhysicalUngroupedAggregate : public PhysicalOperator {
 public:
 	PhysicalUngroupedAggregate(vector<LogicalType> types, vector<unique_ptr<Expression>> expressions,
