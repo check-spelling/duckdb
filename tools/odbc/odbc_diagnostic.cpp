@@ -178,7 +178,7 @@ const std::unordered_map<SQLStateType, SQLState, duckdb::EnumClassHash> OdbcDiag
     {SQLStateType::DNS_ARCHITECTURE_MISMATCH,
      {"IM014", "The specified DSN contains an architecture mismatch between the Driver and Application"}},
     {SQLStateType::CONNECT_HANDLE_DBC_INFO_FAIL, {"IM015", "Driver's SQLConnect on SQL_HANDLE_DBC_INFO_HANDLE failed"}},
-    {SQLStateType::POLLING_DISABLED_ACYNC_NOTIGICATION_MODE,
+    {SQLStateType::POLLING_DISABLED_ASYNC_NOTIGICATION_MODE,
      {"IM017", "Polling is disabled in asynchronous notification mode"}},
     {SQLStateType::SHOULD_CALL_COMPLETE_ASYNC,
      {"IM018", "SQLCompleteAsync has not been called to complete the previous asynchronous operation on this handle."}},
