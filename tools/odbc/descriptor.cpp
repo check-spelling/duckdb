@@ -494,7 +494,7 @@ SQLRETURN SQL_API SQLCopyDesc(SQLHDESC source_desc_handle, SQLHDESC target_desc_
 //! OdbcHandleDesc functions ********************************
 
 OdbcHandleDesc::OdbcHandleDesc(const OdbcHandleDesc &other) : OdbcHandle(other) {
-	// calling copy assigment operator
+	// calling copy assignment operator
 	*this = other;
 }
 

@@ -310,7 +310,7 @@ DiagRecord::DiagRecord(const std::string &msg, const SQLStateType &sqlstate_type
 }
 
 DiagRecord::DiagRecord(const DiagRecord &other) {
-	// calling copy assigment operator
+	// calling copy assignment operator
 	*this = other;
 }
 

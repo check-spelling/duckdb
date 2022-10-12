@@ -33,7 +33,7 @@ OdbcHandle::OdbcHandle(OdbcHandleType type_p) : type(type_p) {
 }
 
 OdbcHandle::OdbcHandle(const OdbcHandle &other) {
-	// calling copy assigment opetator;
+	// calling copy assignment opetator;
 	*this = other;
 }
 
