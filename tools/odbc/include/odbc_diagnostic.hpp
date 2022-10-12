@@ -108,7 +108,7 @@ enum class SQLStateType : uint8_t {
 	SCOPE_TYPE_OUT_RANGE = 89,              // {"HY098", "Scope type out of range"},
 	NULL_TYPE_OUT_RANGE = 90,               // {"HY099", "Nullable type out of range"},
 	UNIQ_OPTION_TYPE_OUT_RANGE = 91,        // {"HY100", "Uniqueness option type out of range"},
-	ACCURARY_OPTION_TYPE_OUT_RANGE = 92,    // {"HY101", "Accuracy option type out of range"},
+	ACCURACY_OPTION_TYPE_OUT_RANGE = 92,    // {"HY101", "Accuracy option type out of range"},
 	INVALID_RETRIEVAL_CODE = 93,            // {"HY103", "Invalid retrieval code"},
 	INVALID_PREC_SCALE_TYPE = 94,           // {"HY104", "Invalid precision or scale value"},
 	INVALID_PARAMETER_TYPE = 95,            // {"HY105", "Invalid parameter type"},

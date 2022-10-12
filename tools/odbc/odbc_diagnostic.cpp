@@ -141,7 +141,7 @@ const std::unordered_map<SQLStateType, SQLState, duckdb::EnumClassHash> OdbcDiag
     {SQLStateType::SCOPE_TYPE_OUT_RANGE, {"HY098", "Scope type out of range"}},
     {SQLStateType::NULL_TYPE_OUT_RANGE, {"HY099", "Nullable type out of range"}},
     {SQLStateType::UNIQ_OPTION_TYPE_OUT_RANGE, {"HY100", "Uniqueness option type out of range"}},
-    {SQLStateType::ACCURARY_OPTION_TYPE_OUT_RANGE, {"HY101", "Accuracy option type out of range"}},
+    {SQLStateType::ACCURACY_OPTION_TYPE_OUT_RANGE, {"HY101", "Accuracy option type out of range"}},
     {SQLStateType::INVALID_RETRIEVAL_CODE, {"HY103", "Invalid retrieval code"}},
     {SQLStateType::INVALID_PREC_SCALE_TYPE, {"HY104", "Invalid precision or scale value"}},
     {SQLStateType::INVALID_PARAMETER_TYPE, {"HY105", "Invalid parameter type"}},
