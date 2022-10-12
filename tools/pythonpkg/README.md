@@ -94,7 +94,7 @@ vim tools/pythonpkg/duckdb_python.cpp # or whatever
 #  - compile it so stubgen can read it
 #  - put the stubs in editable mode so you can tweak them easily
 (cd tools/pythonpkg; pip install -e .)
-# regerate stub once your changes have been installed.
+# regenerate stub once your changes have been installed.
 scripts/regenerate_python_stubs.sh
 # (re-apply our fixes on top of generate stubs,
 # hint: git add -p; git checkout HEAD tools/pythonpkg/duckdb-stubs)
