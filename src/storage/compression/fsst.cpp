@@ -173,7 +173,7 @@ idx_t FSSTStorage::StringFinalAnalyze(AnalyzeState &state_p) {
 		throw std::runtime_error("FSST output buffer is too small unexpectedly");
 	}
 
-	// Sum and and Max compressed lengths
+	// Sum and Max compressed lengths
 	for (auto &size : compressed_sizes) {
 		compressed_dict_size += size;
 		max_compressed_string_length = MaxValue(max_compressed_string_length, size);
