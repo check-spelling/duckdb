@@ -74,7 +74,7 @@ BoundStatement Binder::BindCopyFrom(CopyStatement &stmt) {
 
 	D_ASSERT(!stmt.info->table.empty());
 	// COPY FROM a file
-	// generate an insert statement for the the to-be-inserted table
+	// generate an insert statement for the to-be-inserted table
 	InsertStatement insert;
 	insert.table = stmt.info->table;
 	insert.schema = stmt.info->schema;

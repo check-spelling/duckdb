@@ -91,7 +91,7 @@ idx_t DistinctStatistics::GetCount() const {
 	double s = sample_count;
 	double n = total_count;
 
-	// Assume this proportion of the the sampled values occurred only once
+	// Assume this proportion of the sampled values occurred only once
 	double u1 = pow(u / s, 2) * u;
 
 	// Estimate total uniques using Good Turing Estimation

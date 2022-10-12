@@ -12,7 +12,7 @@ end
 =#
 """
 	duckdb_open(path, out_database)
-Creates a new database or opens an existing database file stored at the the given path.
+Creates a new database or opens an existing database file stored at the given path.
 If no path is given a new in-memory database is created instead.
 * `path`: Path to the database file on disk, or `nullptr` or `:memory:` to open an in-memory database.
 * `out_database`: The result database object.
@@ -22,7 +22,7 @@ function duckdb_open(path, out_database)
     return ccall((:duckdb_open, libduckdb), duckdb_state, (Ptr{UInt8}, Ref{duckdb_database}), path, out_database)
 end
 """
-	Extended version of duckdb_open. Creates a new database or opens an existing database file stored at the the given path.
+	Extended version of duckdb_open. Creates a new database or opens an existing database file stored at the given path.
 
     * path: Path to the database file on disk, or `nullptr` or `:memory:` to open an in-memory database.
     * out_database: The result database object.

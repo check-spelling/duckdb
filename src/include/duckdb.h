@@ -252,7 +252,7 @@ typedef enum {
 //===--------------------------------------------------------------------===//
 
 /*!
-Creates a new database or opens an existing database file stored at the the given path.
+Creates a new database or opens an existing database file stored at the given path.
 If no path is given a new in-memory database is created instead.
 
 * path: Path to the database file on disk, or `nullptr` or `:memory:` to open an in-memory database.
@@ -262,7 +262,7 @@ If no path is given a new in-memory database is created instead.
 DUCKDB_API duckdb_state duckdb_open(const char *path, duckdb_database *out_database);
 
 /*!
-Extended version of duckdb_open. Creates a new database or opens an existing database file stored at the the given path.
+Extended version of duckdb_open. Creates a new database or opens an existing database file stored at the given path.
 
 * path: Path to the database file on disk, or `nullptr` or `:memory:` to open an in-memory database.
 * out_database: The result database object.

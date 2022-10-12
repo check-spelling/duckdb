@@ -31,7 +31,7 @@ bool CardinalityEstimator::SingleColumnFilter(FilterInfo *filter_info) {
 		return false;
 	}
 	// Filter on one relation, (i.e string or range filter on a column).
-	// Grab the first relation and add it to the the equivalence_relations
+	// Grab the first relation and add it to the equivalence_relations
 	D_ASSERT(filter_info->set->count >= 1);
 	for (const RelationsToTDom &r2tdom : relations_to_tdoms) {
 		auto &i_set = r2tdom.equivalent_relations;
