@@ -87,7 +87,7 @@ def run_queries_until_crash_mp(queries, result_file):
     is_internal_error = False
     for q in queries:
         # insert the current query into the database
-        # we do this pre-emptively in case the program crashes
+        # we do this preemptively in case the program crashes
         sqlite_con.execute('INSERT INTO queries VALUES (?, ?)', (id, q))
         sqlite_con.commit()
 
