@@ -35,7 +35,7 @@
  * changes for 2.6.3
  *
  * Revision 1.6  2006/04/26 23:20:05  jms
- * Data type clenaup for qgen
+ * Data type cleanup for qgen
  *
  * Revision 1.5  2006/03/08 21:25:27  jms
  * change to RNG64 to address overflow/underflow issues
