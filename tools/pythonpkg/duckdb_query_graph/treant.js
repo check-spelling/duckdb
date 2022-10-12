@@ -494,15 +494,15 @@
 
 				} else {
 
-					var mainContiner = jq_drawArea.wrapInner('<div class="Treant"/>'),
-						child = mainContiner.find('.Treant');
+					var mainContainer = jq_drawArea.wrapInner('<div class="Treant"/>'),
+						child = mainContainer.find('.Treant');
 
 					child.css({
 						width: viewWidth,
 						height: viewHeight
 					});
 
-					mainContiner.perfectScrollbar();
+					mainContainer.perfectScrollbar();
 				}
 			} // else this.CONFIG.scrollbar == 'None'
 
