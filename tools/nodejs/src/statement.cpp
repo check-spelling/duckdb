@@ -82,7 +82,7 @@ Statement::~Statement() {
 	connection_ref = nullptr;
 }
 
-// A Napi InstanceOf for Javascript Objects "Date" and "RegExp"
+// A Napi InstanceOf for JavaScript Objects "Date" and "RegExp"
 static bool OtherInstanceOf(Napi::Object source, const char *object_type) {
 	if (strcmp(object_type, "Date") == 0) {
 		return source.InstanceOf(source.Env().Global().Get(object_type).As<Napi::Function>());
