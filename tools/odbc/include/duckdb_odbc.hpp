@@ -131,7 +131,7 @@ public:
 
 struct OdbcHandleDesc : public OdbcHandle {
 	//! https://docs.microsoft.com/en-us/sql/odbc/reference/develop-app/descriptors?view=sql-server-ver15
-	// TODO requires full implmentation
+	// TODO requires full implementation
 public:
 	explicit OdbcHandleDesc(OdbcHandleDbc *dbc_ptr = nullptr, OdbcHandleStmt *stmt_ptr = nullptr,
 	                        bool explicit_desc = false)
