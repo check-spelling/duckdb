@@ -616,7 +616,7 @@
 					pathString = ["M", sp, 'L', helpPoint, 'S', stackPoint, ep];
 				}
 
-			} else {  // NORAML CHILDREN
+			} else {  // NORMAL CHILDREN
 
 				if( connType == "step" ) {
 					pathString = ["M", sp, 'L', p1, 'L', p2, 'L', ep];
