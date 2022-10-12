@@ -435,7 +435,7 @@ int dbg_print(int dt, FILE *tgt, void *data, int len, int eol);
 #define VRF_STRT(t)
 #define VRF_END(t)
 
-/*********** distribuitons currently defined *************/
+/*********** distributions currently defined *************/
 #define UNIFORM 0
 
 /*
