@@ -150,7 +150,7 @@ static void ThrowInvalidCast(const string &component, const LogicalType &from_ty
 	string msg = "Not implemented Error: Unimplemented type for cast (" + from_type.ToString() + " -> " +
 	             to_type.ToString() + ")";
 
-	duckdb::DiagRecord diag_rec(msg, SQLStateType::INVALID_DATATIME_FORMAT, stmt->dbc->GetDataSourceName());
+	duckdb::DiagRecord diag_rec(msg, SQLStateType::INVALID_DATETIME_FORMAT, stmt->dbc->GetDataSourceName());
 	throw duckdb::OdbcException(component, SQL_ERROR, diag_rec);
 }
 
@@ -182,7 +182,7 @@ static bool CastTimestampValue(duckdb::OdbcHandleStmt *stmt, const duckdb::Value
 		target = CAST_OP::template Operation<timestamp_t, TARGET_TYPE>(timestamp);
 		return true;
 	} catch (duckdb::Exception &ex) {
-		duckdb::DiagRecord diag_rec(std::string(ex.what()), SQLStateType::INVALID_DATATIME_FORMAT,
+		duckdb::DiagRecord diag_rec(std::string(ex.what()), SQLStateType::INVALID_DATETIME_FORMAT,
 		                            stmt->dbc->GetDataSourceName());
 		throw duckdb::OdbcException("CastTimestampValue", SQL_ERROR, diag_rec);
 	}
