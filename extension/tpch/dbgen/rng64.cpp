@@ -95,7 +95,7 @@ NextRand64(DSS_HUGE nSeed) {
 
 	DSS_HUGE a = (unsigned DSS_HUGE)RNG_A;
 	DSS_HUGE c = (unsigned DSS_HUGE)RNG_C;
-	nSeed = (nSeed * a + c); /* implicitely truncated to 64bits */
+	nSeed = (nSeed * a + c); /* implicitly truncated to 64bits */
 
 	return (nSeed);
 }
