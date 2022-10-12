@@ -35,7 +35,7 @@ DUCKDB_API string JoinTypeToString(JoinType type);
 //! True if join is left or full outer join
 bool IsLeftOuterJoin(JoinType type);
 
-//! True if join is rght or full outer join
+//! True if join is right or full outer join
 bool IsRightOuterJoin(JoinType type);
 
 } // namespace duckdb
