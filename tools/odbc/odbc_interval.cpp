@@ -73,7 +73,7 @@ void OdbcInterval::SetHour(interval_t &interval, SQL_INTERVAL_STRUCT *interval_s
 
 	interval_struct->intval.day_second.hour = interval_struct->intval.day_second.day * duckdb::Interval::HOURS_PER_DAY;
 	interval_struct->intval.day_second.hour += std::abs(interval.micros) / duckdb::Interval::MICROS_PER_HOUR;
-	// remaning stores into the fraction
+	// remaining stores into the fraction
 	interval_struct->intval.day_second.fraction = std::abs(interval.micros) % duckdb::Interval::MICROS_PER_HOUR;
 }
 
@@ -86,7 +86,7 @@ void OdbcInterval::SetMinute(interval_t &interval, SQL_INTERVAL_STRUCT *interval
 	    interval_struct->intval.day_second.hour * duckdb::Interval::MINS_PER_HOUR;
 	interval_struct->intval.day_second.minute +=
 	    interval_struct->intval.day_second.fraction / duckdb::Interval::MICROS_PER_MINUTE;
-	// remaning stores into the fraction
+	// remaining stores into the fraction
 	interval_struct->intval.day_second.fraction =
 	    interval_struct->intval.day_second.fraction % duckdb::Interval::MICROS_PER_MINUTE;
 }
@@ -99,7 +99,7 @@ void OdbcInterval::SetSecond(interval_t &interval, SQL_INTERVAL_STRUCT *interval
 	interval_struct->intval.day_second.second =
 	    interval_struct->intval.day_second.minute * duckdb::Interval::SECS_PER_MINUTE;
 	interval_struct->intval.day_second.fraction += std::abs(interval.micros) / duckdb::Interval::MICROS_PER_SEC;
-	// remaning stores into the fraction
+	// remaining stores into the fraction
 	interval_struct->intval.day_second.fraction = std::abs(interval.micros) % duckdb::Interval::MICROS_PER_SEC;
 }
 
@@ -109,7 +109,7 @@ void OdbcInterval::SetDayToHour(interval_t &interval, SQL_INTERVAL_STRUCT *inter
 	// set hours
 	interval_struct->intval.day_second.hour = std::abs(interval.micros) / duckdb::Interval::MICROS_PER_HOUR;
 
-	// remaning stores into the fraction
+	// remaining stores into the fraction
 	interval_struct->intval.day_second.fraction = std::abs(interval.micros) % duckdb::Interval::MICROS_PER_HOUR;
 }
 
@@ -120,7 +120,7 @@ void OdbcInterval::SetDayToMinute(interval_t &interval, SQL_INTERVAL_STRUCT *int
 	interval_struct->intval.day_second.minute =
 	    interval_struct->intval.day_second.fraction / duckdb::Interval::MICROS_PER_MINUTE;
 
-	// remaning stores into the fraction
+	// remaining stores into the fraction
 	interval_struct->intval.day_second.fraction =
 	    interval_struct->intval.day_second.fraction % duckdb::Interval::MICROS_PER_MINUTE;
 }
@@ -132,7 +132,7 @@ void OdbcInterval::SetDayToSecond(interval_t &interval, SQL_INTERVAL_STRUCT *int
 	interval_struct->intval.day_second.second =
 	    interval_struct->intval.day_second.fraction / duckdb::Interval::MICROS_PER_SEC;
 
-	// remaning stores into the fraction
+	// remaining stores into the fraction
 	interval_struct->intval.day_second.fraction =
 	    interval_struct->intval.day_second.fraction % duckdb::Interval::MICROS_PER_SEC;
 }
@@ -145,7 +145,7 @@ void OdbcInterval::SetHourToMinute(interval_t &interval, SQL_INTERVAL_STRUCT *in
 	interval_struct->intval.day_second.minute =
 	    interval_struct->intval.day_second.fraction / duckdb::Interval::MICROS_PER_MINUTE;
 
-	// remaning stores into the fraction
+	// remaining stores into the fraction
 	interval_struct->intval.day_second.fraction =
 	    interval_struct->intval.day_second.fraction % duckdb::Interval::MICROS_PER_MINUTE;
 }
@@ -158,7 +158,7 @@ void OdbcInterval::SetHourToSecond(interval_t &interval, SQL_INTERVAL_STRUCT *in
 	interval_struct->intval.day_second.second =
 	    interval_struct->intval.day_second.fraction / duckdb::Interval::MICROS_PER_SEC;
 
-	// remaning stores into the fraction
+	// remaining stores into the fraction
 	interval_struct->intval.day_second.fraction =
 	    interval_struct->intval.day_second.fraction % duckdb::Interval::MICROS_PER_SEC;
 }
@@ -171,7 +171,7 @@ void OdbcInterval::SetMinuteToSecond(interval_t &interval, SQL_INTERVAL_STRUCT *
 	interval_struct->intval.day_second.second =
 	    interval_struct->intval.day_second.fraction / duckdb::Interval::MICROS_PER_SEC;
 
-	// remaning stores into the fraction
+	// remaining stores into the fraction
 	interval_struct->intval.day_second.fraction =
 	    interval_struct->intval.day_second.fraction % duckdb::Interval::MICROS_PER_SEC;
 }
