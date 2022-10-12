@@ -155,7 +155,7 @@ void tpch_a_rnd(int min, int max, seed_t *seed, char *dest) {
 
 /*
  * embed a randomly selected member of distribution d in alpha-numeric
- * noise of a length rendomly selected between min and max at a random
+ * noise of a length randomly selected between min and max at a random
  * position
  */
 void e_str(distribution *d, int min, int max, seed_t *seed, char *dest) {
