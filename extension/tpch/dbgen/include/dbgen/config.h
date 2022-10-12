@@ -15,7 +15,7 @@
  *
  * The following #defines will effect the code:
  *   SEPARATOR         -- character used to separate fields in flat files
- *   STDLIB_HAS_GETOPT -- to prevent confilcts with gloabal getopt()
+ *   STDLIB_HAS_GETOPT -- to prevent conflicts with gloabal getopt()
  *   MDY_DATE          -- generate dates as MM-DD-YY
  *   WIN32             -- support for WindowsNT
  *   DSS_HUGE          -- 64 bit data type
