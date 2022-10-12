@@ -3,7 +3,7 @@
     db = DBInterface.connect(DuckDB.DB)
     con = DBInterface.connect(db)
 
-    @test_throws DuckDB.QueryException DuckDB.Appender(db, "nonexistanttable")
+    @test_throws DuckDB.QueryException DuckDB.Appender(db, "nonexistenttable")
     @test_throws DuckDB.QueryException DuckDB.Appender(con, "t")
 end
 

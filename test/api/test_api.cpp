@@ -238,7 +238,7 @@ TEST_CASE("Test streaming API errors", "[api]") {
 	REQUIRE(CHECK_COLUMN(result2, 0, {42}));
 
 	// error in binding
-	result = con.SendQuery("SELECT * FROM nonexistanttable");
+	result = con.SendQuery("SELECT * FROM nonexistenttable");
 	REQUIRE(!result->ToString().empty());
 	REQUIRE(result->type == QueryResultType::MATERIALIZED_RESULT);
 	REQUIRE_FAIL(result);
