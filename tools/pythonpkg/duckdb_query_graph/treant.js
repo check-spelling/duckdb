@@ -318,16 +318,16 @@
 			if(level <= this.CONFIG.maxDepth) {
 				var xTmp = node.prelim + X,
 					yTmp = Y, align = this.CONFIG.nodeAlign,
-					orinet = this.CONFIG.rootOrientation,
+					orient = this.CONFIG.rootOrientation,
 					levelHeight, nodesizeTmp;
 
-				if (orinet == 'NORTH' || orinet == 'SOUTH') {
+				if (orient == 'NORTH' || orient == 'SOUTH') {
 
 					levelHeight = this.levelMaxDim[level].height;
 					nodesizeTmp = node.height;
 					if (node.pseudo) node.height = levelHeight; // assign a new size to pseudo nodes
 				}
-				else if (orinet == 'WEST' || orinet == 'EAST') {
+				else if (orient == 'WEST' || orient == 'EAST') {
 
 					levelHeight = this.levelMaxDim[level].width;
 					nodesizeTmp = node.width;
@@ -337,10 +337,10 @@
 				node.X = xTmp;
 
 				if (node.pseudo) { // pseudo nodes need to be properly aligned, otherwise position is not correct in some examples
-					if (orinet == 'NORTH' || orinet == 'WEST') {
+					if (orient == 'NORTH' || orient == 'WEST') {
 						node.Y = yTmp; // align "BOTTOM"
 					}
-					else if (orinet == 'SOUTH' || orinet == 'EAST') {
+					else if (orient == 'SOUTH' || orient == 'EAST') {
 						node.Y = (yTmp + (levelHeight - nodesizeTmp)); // align "TOP"
 					}
 				
@@ -351,17 +351,17 @@
 				}
 
 
-				if(orinet == 'WEST' || orinet == 'EAST') {
+				if(orient == 'WEST' || orient == 'EAST') {
 					var swapTmp = node.X;
 					node.X = node.Y;
 					node.Y = swapTmp;
 				}
 
-				if (orinet == 'SOUTH') {
+				if (orient == 'SOUTH') {
 
 					node.Y = -node.Y - nodesizeTmp;
 				}
-				else if (orinet == 'EAST') {
+				else if (orient == 'EAST') {
 
 					node.X = -node.X - nodesizeTmp;
 				}
@@ -567,17 +567,17 @@
 
 			var startPoint = from_node.connectorPoint( true ),
 				endPoint = to_node.connectorPoint( false ),
-				orinet = this.CONFIG.rootOrientation,
+				orient = this.CONFIG.rootOrientation,
 				connType = from_node.connStyle.type,
 				P1 = {}, P2 = {};
 
-			if (orinet == 'NORTH' || orinet == 'SOUTH') {
+			if (orient == 'NORTH' || orient == 'SOUTH') {
 				P1.y = P2.y = (startPoint.y + endPoint.y) / 2;
 
 				P1.x = startPoint.x;
 				P2.x = endPoint.x;
 
-			} else if (orinet == 'EAST' || orinet == 'WEST') {
+			} else if (orient == 'EAST' || orient == 'WEST') {
 				P1.x = P2.x = (startPoint.x + endPoint.x) / 2;
 
 				P1.y = startPoint.y;
@@ -590,7 +590,7 @@
 
 			if(stacked) { // STACKED CHILDREN
 
-				stackPoint = (orinet == 'EAST' || orinet == 'WEST') ?
+				stackPoint = (orient == 'EAST' || orient == 'WEST') ?
 								endPoint.x+','+startPoint.y :
 								startPoint.x+','+endPoint.y;
 
@@ -603,13 +603,13 @@
 					var helpPoint, // used for nicer curve lines
 						indent = from_node.connStyle.stackIndent;
 
-					if (orinet == 'NORTH') {
+					if (orient == 'NORTH') {
 						helpPoint = (endPoint.x - indent)+','+(endPoint.y - indent);
-					} else if (orinet == 'SOUTH') {
+					} else if (orient == 'SOUTH') {
 						helpPoint = (endPoint.x - indent)+','+(endPoint.y + indent);
-					} else if (orinet == 'EAST') {
+					} else if (orient == 'EAST') {
 						helpPoint = (endPoint.x + indent) +','+startPoint.y;
-					} else if ( orinet == 'WEST') {
+					} else if ( orient == 'WEST') {
 						helpPoint = (endPoint.x - indent) +','+startPoint.y;
 					}
 
