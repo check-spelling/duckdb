@@ -82,7 +82,7 @@ const std::unordered_map<SQLStateType, SQLState, duckdb::EnumClassHash> OdbcDiag
     {SQLStateType::INDICATOR_VARIABLE_NOT_SUPPLIED, {"22002", "Indicator variable required but not supplied"}},
     {SQLStateType::NUMERIC_OUT_RANGE, {"22003", "Numeric value out of range"}},
     {SQLStateType::INVALID_DATETIME_FORMAT, {"22007", "Invalid datetime format"}},
-    {SQLStateType::DATETIME_OVERVLOW, {"22008", "Datetime field overflow"}},
+    {SQLStateType::DATETIME_OVERFLOW, {"22008", "Datetime field overflow"}},
     {SQLStateType::DIVISION_BY_ZERO, {"22012", "Division by zero"}},
     {SQLStateType::INTERVAL_OVERFLOW, {"22015", "Interval field overflow"}},
     {SQLStateType::INVALID_CAST_CHAR, {"22018", "Invalid character value for cast specification"}},

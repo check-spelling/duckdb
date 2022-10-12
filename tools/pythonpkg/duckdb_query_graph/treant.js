@@ -472,11 +472,11 @@
 
 			if(this.CONFIG.scrollbar == 'native') {
 
-				if(this.drawArea.clientWidth < treeWidth) { // is owerflow-x necessary
+				if(this.drawArea.clientWidth < treeWidth) { // is overflow-x necessary
 					this.drawArea.style.overflowX = "auto";
 				}
 
-				if(this.drawArea.clientHeight < treeHeight) { // is owerflow-y necessary
+				if(this.drawArea.clientHeight < treeHeight) { // is overflow-y necessary
 					this.drawArea.style.overflowY = "auto";
 				}
 

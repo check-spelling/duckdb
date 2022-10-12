@@ -50,7 +50,7 @@ enum class SQLStateType : uint8_t {
 	INDICATOR_VARIABLE_NOT_SUPPLIED = 31,   //    {"22002", "Indicator variable required but not supplied"},
 	NUMERIC_OUT_RANGE = 32,                 //	{"22003", "Numeric value out of range"},
 	INVALID_DATETIME_FORMAT = 33,           //	{"22007", "Invalid datetime format"},
-	DATETIME_OVERVLOW = 34,                 //    {"22008", "Datetime field overflow"},
+	DATETIME_OVERFLOW = 34,                 //    {"22008", "Datetime field overflow"},
 	DIVISION_BY_ZERO = 35,                  //    {"22012", "Division by zero"},
 	INTERVAL_OVERFLOW = 36,                 //	{"22015", "Interval field overflow"},
 	INVALID_CAST_CHAR = 37,                 //	{"22018", "Invalid character value for cast specification"},
