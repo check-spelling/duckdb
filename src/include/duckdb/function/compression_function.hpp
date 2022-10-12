@@ -133,7 +133,7 @@ public:
 	compression_final_analyze_t final_analyze;
 
 	//! Compression step: actually compress the data
-	//! init_compression is called once to set up the comperssion state
+	//! init_compression is called once to set up the compression state
 	compression_init_compression_t init_compression;
 	//! compress is called several times (once per vector in the row group)
 	compression_compress_data_t compress;
