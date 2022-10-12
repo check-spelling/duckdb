@@ -680,7 +680,7 @@ public class TestDuckDBJDBC {
 		Statement stmt = conn.createStatement();
 		stmt.execute("CREATE TABLE a (ts TIMESTAMP)");
 
-		// Generat tests without database
+		// Generate tests without database
 		Timestamp ts0 = Timestamp.valueOf("1970-01-01 00:00:00");
 		Timestamp ts1 = Timestamp.valueOf("2021-07-29 21:13:11");
 		Timestamp ts2 = Timestamp.valueOf("2021-07-29 21:13:11.123456");
