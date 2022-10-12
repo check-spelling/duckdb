@@ -1184,7 +1184,7 @@ ValueComparisonResult CompareValueInformation(ExpressionValueInformation &left, 
 //		for (const auto &conjunctions_to_push : map_col_conjunctions[colref]) {
 //			// root OR filter to push into the TableFilter
 //			auto root_or_filter = make_unique<ConjunctionOrFilter>();
-//			// variable to hold the last conjuntion filter pointer
+//			// variable to hold the last conjunction filter pointer
 //			// the next filter will be added into it, i.e., we create a chain of conjunction filters
 //			ConjunctionFilter *last_conj_filter = root_or_filter.get();
 //
