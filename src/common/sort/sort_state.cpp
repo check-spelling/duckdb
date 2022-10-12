@@ -429,7 +429,7 @@ void GlobalSortState::InitializeMergeRound() {
 		odd_one_out = move(sorted_blocks.back());
 		sorted_blocks.pop_back();
 	}
-	// Init merge path path indices
+	// Init merge path indices
 	pair_idx = 0;
 	num_pairs = sorted_blocks.size() / 2;
 	l_start = 0;
