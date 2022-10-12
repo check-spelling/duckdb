@@ -153,7 +153,7 @@ class TestArrowNested(object):
         assert arrow_to_pandas("SELECT MAP(LIST_VALUE({'i':1,'j':2},{'i':3,'j':4}),LIST_VALUE({'i':1,'j':2},{'i':3,'j':4})) as a") == [[({'i': 1, 'j': 2}, {'i': 1, 'j': 2}), ({'i': 3, 'j': 4}, {'i': 3, 'j': 4})]]
 
 
-    def test_frankstein_nested(self,duckdb_cursor):
+    def test_frankenstein_nested(self,duckdb_cursor):
         if not can_run:
             return
         # List of structs W/ Struct that is NULL entirely
