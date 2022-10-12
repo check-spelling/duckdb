@@ -534,7 +534,7 @@ typedef struct yyjson_doc yyjson_doc;
 /**
 An immutable value for reading JSON.
 A JSON Value has the same lifetime as its document. The memory is held by its
-document and and cannot be freed alone.
+document and cannot be freed alone.
 */
 typedef struct yyjson_val yyjson_val;
 
@@ -548,7 +548,7 @@ typedef struct yyjson_mut_doc yyjson_mut_doc;
 /**
 A mutable value for building JSON.
 A JSON Value has the same lifetime as its document. The memory is held by its
-document and and cannot be freed alone.
+document and cannot be freed alone.
 */
 typedef struct yyjson_mut_val yyjson_mut_val;
 
