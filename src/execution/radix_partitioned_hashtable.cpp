@@ -198,7 +198,7 @@ bool RadixPartitionedHashTable::Finalize(ClientContext &context, GlobalSinkState
 	gstate.is_finalized = true;
 
 	// special case if we have non-combinable aggregates
-	// we have already aggreagted into a global shared HT that does not require any additional finalization steps
+	// we have already aggregated into a global shared HT that does not require any additional finalization steps
 	if (ForceSingleHT(gstate)) {
 		D_ASSERT(gstate.finalized_hts.size() <= 1);
 		D_ASSERT(gstate.finalized_hts.empty() || gstate.finalized_hts[0]);
