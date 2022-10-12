@@ -61,7 +61,7 @@ void WindowSegmentTree::AggregateInit() {
 	aggregate.initialize(state.data());
 }
 
-void WindowSegmentTree::AggegateFinal(Vector &result, idx_t rid) {
+void WindowSegmentTree::AggregateFinal(Vector &result, idx_t rid) {
 	AggregateInputData aggr_input_data(bind_info, Allocator::DefaultAllocator());
 	aggregate.finalize(statev, aggr_input_data, result, 1, rid);
 
@@ -258,7 +258,7 @@ void WindowSegmentTree::Compute(Vector &result, idx_t rid, idx_t begin, idx_t en
 	// Aggregate everything at once if we can't combine states
 	if (!aggregate.combine || !UseCombineAPI()) {
 		WindowSegmentValue(0, begin, end);
-		AggegateFinal(result, rid);
+		AggregateFinal(result, rid);
 		return;
 	}
 
@@ -282,7 +282,7 @@ void WindowSegmentTree::Compute(Vector &result, idx_t rid, idx_t begin, idx_t en
 		end = parent_end;
 	}
 
-	AggegateFinal(result, rid);
+	AggregateFinal(result, rid);
 }
 
 } // namespace duckdb

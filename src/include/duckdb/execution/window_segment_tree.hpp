@@ -31,7 +31,7 @@ private:
 	void ExtractFrame(idx_t begin, idx_t end);
 	void WindowSegmentValue(idx_t l_idx, idx_t begin, idx_t end);
 	void AggregateInit();
-	void AggegateFinal(Vector &result, idx_t rid);
+	void AggregateFinal(Vector &result, idx_t rid);
 
 	//! Use the window API, if available
 	inline bool UseWindowAPI() const {
