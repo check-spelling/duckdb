@@ -1058,7 +1058,7 @@ public class TestDuckDBJDBC {
 		ps1.execute();
 
 		PreparedStatement ps2 = conn.prepareStatement("SELECT * FROM q WHERE id = ?");
-		BigDecimal multiplicant = new BigDecimal("0.987");
+		BigDecimal multiplicand = new BigDecimal("0.987");
 
 		for (int i = 2; i < 10000; i++) {
 			ps2.setObject(1, new BigDecimal(i - 1));
@@ -1080,9 +1080,9 @@ public class TestDuckDBJDBC {
 			assertEquals(dec128_org, dec128);
 			rs.close();
 
-			dec32_org = dec32.multiply(multiplicant).setScale(4, java.math.RoundingMode.HALF_EVEN);
-			dec64_org = dec64.multiply(multiplicant).setScale(7, java.math.RoundingMode.HALF_EVEN);
-			dec128_org = dec128.multiply(multiplicant).setScale(10, java.math.RoundingMode.HALF_EVEN);
+			dec32_org = dec32.multiply(multiplicand).setScale(4, java.math.RoundingMode.HALF_EVEN);
+			dec64_org = dec64.multiply(multiplicand).setScale(7, java.math.RoundingMode.HALF_EVEN);
+			dec128_org = dec128.multiply(multiplicand).setScale(10, java.math.RoundingMode.HALF_EVEN);
 
 			ps1.clearParameters();
 			ps1.setObject(1, new BigDecimal(i));
