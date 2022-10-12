@@ -205,7 +205,7 @@ EXTERN distribution adverbs;
 EXTERN distribution prepositions;
 EXTERN distribution verbs;
 EXTERN distribution terminators;
-EXTERN distribution auxillaries;
+EXTERN distribution auxiliaries;
 EXTERN distribution np;
 EXTERN distribution vp;
 EXTERN distribution grammar;

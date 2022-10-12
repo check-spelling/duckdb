@@ -94,7 +94,7 @@ static int txt_vp(char *dest, seed_t *seed) {
 			src = &verbs;
 			break;
 		case 'X':
-			src = &auxillaries;
+			src = &auxiliaries;
 			break;
 		} /* end of POS switch statement */
 		i = pick_str(src, seed, dest);
@@ -255,7 +255,7 @@ static char *gen_text(char *dest, seed_t *seed, distribution *s) {
 static char *noun_index[NOUN_MAX_WEIGHT + 1];
 static char *adjectives_index[ADJECTIVES_MAX_WEIGHT + 1];
 static char *adverbs_index[ADVERBS_MAX_WEIGHT + 1];
-static char *auxillaries_index[AUXILLARIES_MAX_WEIGHT + 1];
+static char *auxiliaries_index[AUXILLARIES_MAX_WEIGHT + 1];
 static char *verbs_index[VERBS_MAX_WEIGHT + 1];
 static char *prepositions_index[PREPOSITIONS_MAX_WEIGHT + 1];
 
@@ -298,13 +298,13 @@ static char *gen_vp(char *dest, seed_t *seed) {
 	if (index == 0) {
 		dest = gen_text_index(dest, seed, verbs_index, &verbs);
 	} else if (index == 1) {
-		dest = gen_text_index(dest, seed, auxillaries_index, &auxillaries);
+		dest = gen_text_index(dest, seed, auxiliaries_index, &auxiliaries);
 		dest = gen_text_index(dest, seed, verbs_index, &verbs);
 	} else if (index == 2) {
 		dest = gen_text_index(dest, seed, verbs_index, &verbs);
 		dest = gen_text_index(dest, seed, adverbs_index, &adverbs);
 	} else {
-		dest = gen_text_index(dest, seed, auxillaries_index, &auxillaries);
+		dest = gen_text_index(dest, seed, auxiliaries_index, &auxiliaries);
 		dest = gen_text_index(dest, seed, verbs_index, &verbs);
 		dest = gen_text_index(dest, seed, adverbs_index, &adverbs);
 	}
@@ -405,7 +405,7 @@ void init_text_pool(long bSize, DBGenContext *ctx) {
 	gen_index(noun_index, &nouns);
 	gen_index(adjectives_index, &adjectives);
 	gen_index(adverbs_index, &adverbs);
-	gen_index(auxillaries_index, &auxillaries);
+	gen_index(auxiliaries_index, &auxiliaries);
 	gen_index(verbs_index, &verbs);
 	gen_index(prepositions_index, &prepositions);
 
