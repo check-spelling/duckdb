@@ -1057,7 +1057,7 @@
 				new_pos, 
 				config['animation']['nodeSpeed'], config['animation']['nodeAnimation'], 
 				function() {
-					// $.animate applys "overflow:hidden" to the node, remove it to avoid visual problems
+					// $.animate applies "overflow:hidden" to the node, remove it to avoid visual problems
 					this.style.overflow = "";
 				}
 			);
