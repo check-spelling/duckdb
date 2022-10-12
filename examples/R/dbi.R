@@ -19,7 +19,7 @@ dbListFields(con, "iris")
 # we can read the entire table back into R
 iris2 <- dbReadTable(con, "iris")
 
-# we can also run arbitray SQL commands on this table
+# we can also run arbitrary SQL commands on this table
 iris3 <- dbGetQuery(con, 'SELECT "Species", MIN("Sepal.Width") FROM iris GROUP BY "Species"')
 
 # we can use prepared statements to parameterize queries:
