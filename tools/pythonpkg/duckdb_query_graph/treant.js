@@ -797,7 +797,7 @@
 
 		this.stackParentId = stackParentId;
 
-		// pseudo node is a node with width=height=0, it is invisible, but necessary for the correct positiong of the tree
+		// pseudo node is a node with width=height=0, it is invisible, but necessary for the correct position of the tree
 		this.pseudo = nodeStructure === 'pseudo' || nodeStructure['pseudo'];
 
 		this.image = nodeStructure['image'];
