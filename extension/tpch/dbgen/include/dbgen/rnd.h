@@ -15,7 +15,7 @@
 
 #pragma once
 
-/* function protypes */
+/* function prototypes */
 DSS_HUGE NextRand PROTO((DSS_HUGE));
 DSS_HUGE UnifInt PROTO((DSS_HUGE, DSS_HUGE, long));
 
