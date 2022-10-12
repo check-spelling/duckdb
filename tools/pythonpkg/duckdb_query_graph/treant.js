@@ -222,7 +222,7 @@
 				}
 
 				// handle stacked children positioning
-				if(node.stackParent) { // hadle the parent of stacked children
+				if(node.stackParent) { // handle the parent of stacked children
 					node.modifier += this.nodeDB.get( node.stackChildren[0] ).size()/2 + node.connStyle.stackIndent;
 				} else if ( node.stackParentId ) { // handle stacked children
 					node.prelim = 0;
