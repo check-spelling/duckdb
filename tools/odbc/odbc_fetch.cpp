@@ -361,7 +361,7 @@ SQLRETURN OdbcFetch::ColumnWise(SQLHSTMT statement_handle, OdbcHandleStmt *stmt)
 			if (!SQL_SUCCEEDED(duckdb::GetDataStmtResult(statement_handle, col_idx + 1, bound_col.type, target_val_addr,
 			                                             bound_col.len, target_len_addr))) {
 				SetRowStatus(row_idx, SQL_ROW_ERROR);
-				stmt->error_messages.emplace_back("Error retriving #row: " + std::to_string(row_idx) +
+				stmt->error_messages.emplace_back("Error retrieving #row: " + std::to_string(row_idx) +
 				                                  " and column: " + stmt->stmt->GetNames()[col_idx]);
 				ret = SQL_SUCCESS_WITH_INFO;
 			}
@@ -404,7 +404,7 @@ SQLRETURN OdbcFetch::RowWise(SQLHSTMT statement_handle, OdbcHandleStmt *stmt) {
 			if (!SQL_SUCCEEDED(duckdb::GetDataStmtResult(statement_handle, col_idx + 1, bound_col.type, target_val_addr,
 			                                             bound_col.len, (SQLLEN *)target_len_addr))) {
 				SetRowStatus(row_idx, SQL_ROW_ERROR);
-				stmt->error_messages.emplace_back("Error retriving #row: " + std::to_string(row_idx) +
+				stmt->error_messages.emplace_back("Error retrieving #row: " + std::to_string(row_idx) +
 				                                  " and column: " + stmt->stmt->GetNames()[col_idx]);
 				ret = SQL_SUCCESS_WITH_INFO;
 			}
