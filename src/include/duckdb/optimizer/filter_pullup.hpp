@@ -30,7 +30,7 @@ private:
 	// only pull up filters when there is a fork
 	bool can_pullup = false;
 
-	// identifiy case the branch is a set operation (INTERSECT or EXCEPT)
+	// identify case the branch is a set operation (INTERSECT or EXCEPT)
 	bool can_add_column = false;
 
 private:
