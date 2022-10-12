@@ -244,7 +244,7 @@ py::object TransformFilterRecursive(TableFilter *filter, const string &column_na
 		auto constant_field = field(column_name);
 		return constant_field.attr("is_valid")();
 	}
-	//! We do not pushdown or conjuctions yet
+	//! We do not pushdown or conjunctions yet
 	case TableFilterType::CONJUNCTION_OR: {
 		idx_t i = 0;
 		auto or_filter = (ConjunctionOrFilter *)filter;
