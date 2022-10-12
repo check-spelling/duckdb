@@ -101,7 +101,7 @@ static int txt_vp(char *dest, seed_t *seed) {
 		i = (int)strlen(DIST_MEMBER(src, i));
 		dest += i;
 		res += i;
-		if (*(++cptr)) /* miscelaneous fillagree, like punctuation */
+		if (*(++cptr)) /* miscellaneous fillagree, like punctuation */
 		{
 			dest += 1;
 			res += 1;
@@ -155,7 +155,7 @@ static int txt_np(char *dest, seed_t *seed) {
 		i = (int)strlen(DIST_MEMBER(src, i));
 		dest += i;
 		res += i;
-		if (*(++cptr)) /* miscelaneous fillagree, like punctuation */
+		if (*(++cptr)) /* miscellaneous fillagree, like punctuation */
 		{
 			*dest = *cptr;
 			dest += 1;
@@ -216,7 +216,7 @@ next_token: /* I hate goto's, but can't seem to have parent and child use strtok
 	dest += len;
 	res += len;
 	cptr++;
-	if (*cptr && *cptr != ' ') /* miscelaneous fillagree, like punctuation */
+	if (*cptr && *cptr != ' ') /* miscellaneous fillagree, like punctuation */
 	{
 		dest += 1;
 		res += 1;
