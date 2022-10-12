@@ -696,7 +696,7 @@
 
 				var stack = (node['stackChildren'] && !self.hasGrandChildren(node)) ? newNode.id : null;
 
-				// svildren are position on separate leves, one beneeth the other
+				// svildren are position on separate leves, one beneath the other
 				if (stack !== null) { newNode.stackChildren = []; }
 
 				for (var i = 0, len = node['children'].length; i < len ; i++) {
