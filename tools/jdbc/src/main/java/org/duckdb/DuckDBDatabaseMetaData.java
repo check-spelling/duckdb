@@ -704,7 +704,7 @@ public class DuckDBDatabaseMetaData implements DatabaseMetaData {
 		// need to figure out the java types for the sql types :/
 		String values_str = "VALUES(NULL::STRING, NULL::INTEGER)";
 		Statement gunky_statement = conn.createStatement();
-		// TODO this could get slow with many many columns and we really only need the
+		// TODO this could get slow with many columns and we really only need the
 		// types :/
 		ResultSet rs = gunky_statement
 				.executeQuery("SELECT DISTINCT data_type FROM information_schema.columns ORDER BY data_type");
