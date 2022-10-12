@@ -15,7 +15,7 @@ string OdbcUtils::ReadString(const SQLPOINTER ptr, const SQLSMALLINT len) {
 
 SQLRETURN OdbcUtils::SetStringValueLength(const string &val_str, SQLLEN *str_len_or_ind_ptr) {
 	if (str_len_or_ind_ptr) {
-		// it fills the required lenght from string value
+		// it fills the required length from string value
 		*str_len_or_ind_ptr = val_str.size();
 		return SQL_SUCCESS;
 	}
