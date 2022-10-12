@@ -101,7 +101,7 @@ jobs:
 
    osx-nodejs:
       if: startsWith(github.ref, 'refs/tags/v') || github.ref == 'refs/heads/master'
-      name: node.js OSX
+      name: node.js macOS
       runs-on: macos-latest
       needs: linux-nodejs
       steps:

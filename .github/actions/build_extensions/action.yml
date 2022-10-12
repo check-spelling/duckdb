@@ -73,7 +73,7 @@ inputs:
     description: 'Python binary name because wtf Python'
     default: 'python3'
   osx_universal:
-    description: 'Build Universal Binary for OSX'
+    description: 'Build Universal Binary for macOS'
     default: 0
   aarch64_cross_compile:
     description: 'Enable Linux aarch64 cross-compiling'

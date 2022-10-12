@@ -2112,7 +2112,7 @@ int_getDefaultCodepage()
         const char *codeset = nl_langinfo(U_NL_LANGINFO_CODESET);
 #if U_PLATFORM_IS_DARWIN_BASED || U_PLATFORM_IS_LINUX_BASED
         /*
-         * On Linux and MacOSX, ensure that default codepage for non C/POSIX locale is UTF-8
+         * On Linux and macOS, ensure that default codepage for non C/POSIX locale is UTF-8
          * instead of ASCII.
          */
         if (uprv_strcmp(localeName, "en_US_POSIX") != 0) {

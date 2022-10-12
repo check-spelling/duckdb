@@ -201,7 +201,7 @@ unique_ptr<FileHandle> LocalFileSystem::OpenFile(const string &path, uint8_t fla
 		throw Exception("DIRECT_IO not supported on Solaris");
 #endif
 #if defined(__DARWIN__) || defined(__APPLE__) || defined(__OpenBSD__)
-		// OSX does not have O_DIRECT, instead we need to use fcntl afterwards to support direct IO
+		// macOS does not have O_DIRECT, instead we need to use fcntl afterwards to support direct IO
 		open_flags |= O_SYNC;
 #else
 		open_flags |= O_DIRECT | O_SYNC;
@@ -213,7 +213,7 @@ unique_ptr<FileHandle> LocalFileSystem::OpenFile(const string &path, uint8_t fla
 	}
 	// #if defined(__DARWIN__) || defined(__APPLE__)
 	// 	if (flags & FileFlags::FILE_FLAGS_DIRECT_IO) {
-	// 		// OSX requires fcntl for Direct IO
+	// 		// macOS requires fcntl for Direct IO
 	// 		rc = fcntl(fd, F_NOCACHE, 1);
 	// 		if (fd == -1) {
 	// 			throw IOException("Could not enable direct IO for file \"%s\": %s", path, strerror(errno));

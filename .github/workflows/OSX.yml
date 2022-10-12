@@ -1,4 +1,4 @@
-name: OSX
+name: macOS
 on:
   push:
     paths-ignore:
@@ -20,7 +20,7 @@ env:
 
 jobs:
   xcode-debug:
-    name: OSX Debug
+    name: macOS Debug
     runs-on: macos-latest
 
     env:
@@ -54,7 +54,7 @@ jobs:
         clang++ -DDEBUG -O0 -std=c++11 -Wall -Werror -emit-llvm -S duckdb.cpp parquet-amalgamation.cpp
 
   xcode-release:
-    name: OSX Release
+    name: macOS Release
     runs-on: macos-latest
     needs: xcode-debug
     env:
@@ -128,7 +128,7 @@ jobs:
           build/release/tools/jdbc/duckdb_jdbc.jar
 
   xcode-extensions:
-    name: OSX Extensions Release
+    name: macOS Extensions Release
     runs-on: macos-latest
     needs: xcode-debug
     env:

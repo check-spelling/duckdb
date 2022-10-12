@@ -272,7 +272,7 @@ settings.json
 # PyCharm files
 .idea
 
-# OSX dir files
+# macOS dir files
 .DS_Store
 
 # User's build configuration

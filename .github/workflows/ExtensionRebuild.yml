@@ -63,7 +63,7 @@ jobs:
 
 
   xcode-extensions-rebuild:
-    name: OSX Extensions Release
+    name: macOS Extensions Release
     runs-on: macos-latest
     env:
       AWS_ACCESS_KEY_ID: ${{secrets.S3_ID}}
