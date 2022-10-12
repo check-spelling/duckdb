@@ -311,7 +311,7 @@ static unique_ptr<FunctionData> RegexExtractBind(ClientContext &context, ScalarF
 			throw ParameterNotResolvedException();
 		}
 		if (!arguments[2]->IsFoldable()) {
-			throw InvalidInputException("Group index field field must be a constant!");
+			throw InvalidInputException("Group index field must be a constant!");
 		}
 		Value group = ExpressionExecutor::EvaluateScalar(*arguments[2]);
 		if (!group.IsNull()) {
