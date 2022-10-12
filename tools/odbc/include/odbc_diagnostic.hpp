@@ -197,7 +197,7 @@ class OdbcDiagnostic {
 public:
 	DiagHeader header;
 	std::vector<DiagRecord> diag_records;
-	// vector that mantains the indexes of DiagRecord
+	// vector that maintains the indexes of DiagRecord
 	std::vector<SQLSMALLINT> vec_record_idx;
 	static const std::unordered_map<SQLINTEGER, std::string> MAP_DYNAMIC_FUNCTION;
 	static const std::set<std::string> SET_ODBC3_SUBCLASS_ORIGIN;
