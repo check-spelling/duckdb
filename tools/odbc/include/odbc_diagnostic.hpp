@@ -85,7 +85,7 @@ enum class SQLStateType : uint8_t {
 	INVALD_SQL_TYPE = 66,                   // {"HY004", "Invalid SQL data type"},
 	STMT_NOT_PREPARED = 67,                 // {"HY007", "Associated statement is not prepared"},
 	OPERATION_CANCELLED = 68,               // {"HY008", "Operation canceled"},
-	INVALIDE_ARGUMENT = 69,                 // {"HY009", "Invalid argument value"},
+	INVALID_ARGUMENT = 69,                  // {"HY009", "Invalid argument value"},
 	FUNCTION_SEQ_ERROR = 70,                // {"HY010", "Function sequence error"},
 	ATTR_CANNOT_BE_SET_NOW = 71,            // {"HY011", "Attribute cannot be set now"},
 	INVALID_TRANSACTION_OP_CODE = 72,       // {"HY012", "Invalid transaction operation code"},

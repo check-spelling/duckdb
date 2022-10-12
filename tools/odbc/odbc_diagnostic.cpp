@@ -117,7 +117,7 @@ const std::unordered_map<SQLStateType, SQLState, duckdb::EnumClassHash> OdbcDiag
     {SQLStateType::INVALD_SQL_TYPE, {"HY004", "Invalid SQL data type"}},
     {SQLStateType::STMT_NOT_PREPARED, {"HY007", "Associated statement is not prepared"}},
     {SQLStateType::OPERATION_CANCELLED, {"HY008", "Operation canceled"}},
-    {SQLStateType::INVALIDE_ARGUMENT, {"HY009", "Invalid argument value"}},
+    {SQLStateType::INVALID_ARGUMENT, {"HY009", "Invalid argument value"}},
     {SQLStateType::FUNCTION_SEQ_ERROR, {"HY010", "Function sequence error"}},
     {SQLStateType::ATTR_CANNOT_BE_SET_NOW, {"HY011", "Attribute cannot be set now"}},
     {SQLStateType::INVALID_TRANSACTION_OP_CODE, {"HY012", "Invalid transaction operation code"}},
