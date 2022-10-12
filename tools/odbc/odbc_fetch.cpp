@@ -152,7 +152,7 @@ SQLRETURN OdbcFetch::SetAbsoluteCurrentChunk(OdbcHandleStmt *stmt, SQLLEN fetch_
 	if (!current_chunk || chunks.empty()) {
 		FetchNext(stmt);
 	}
-	// it has reachted the last row
+	// it has reached the last row
 	if (fetch_offset > (SQLLEN)current_chunk->size() && resultset_end) {
 		return SQL_NO_DATA;
 	}
