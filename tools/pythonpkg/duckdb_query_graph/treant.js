@@ -537,7 +537,7 @@
 			}
 		},
 
-		// create the parh which is represanted as a point, used for hiding the connection
+		// create the parh which is represented as a point, used for hiding the connection
 		getPointPathString: function(hp) {
 			// "_" indicates the path will be hidden
 			return ["_M", hp.x, ",", hp.y, 'L', hp.x, ",", hp.y, hp.x, ",", hp.y].join(" ");
