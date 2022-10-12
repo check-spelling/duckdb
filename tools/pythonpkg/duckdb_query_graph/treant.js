@@ -815,7 +815,7 @@
 
 		// '.node' DIV
 		this.nodeInnerHTML	= nodeStructure['innerHTML'];
-		this.nodeHTMLclass	= (tree.CONFIG.node['HTMLclass'] ? tree.CONFIG.node['HTMLclass'] : '') + // globaly defined class for the nodex
+		this.nodeHTMLclass	= (tree.CONFIG.node['HTMLclass'] ? tree.CONFIG.node['HTMLclass'] : '') + // globally defined class for the nodex
 								(nodeStructure['HTMLclass'] ? (' ' + nodeStructure['HTMLclass']) : '');		// + specific node class
 
 		this.nodeHTMLid		= nodeStructure['HTMLid'];
@@ -1325,6 +1325,6 @@
 		newTree.positionTree(callback);
 	};
 
-	/* expose constructor globaly */ 
+	/* expose constructor globally */ 
 	window['Treant'] = Treant;
 })();
