@@ -243,7 +243,7 @@ bool Iterator::LowerBound(Node *node, Key &key, bool inclusive) {
 			// Case2: This means the previous node prefix(if any) + a_key(one element of of key array of previous node)
 			// == key[q..=w].
 			// But key[w+1..=z] maybe greater than leaf node prefix.
-			// One fact is key[w] is alawys equal to a_key and the next element
+			// One fact is key[w] is always equal to a_key and the next element
 			// of key array of previous node is always > a_key So we just call Next() once.
 
 			return Next();
