@@ -141,7 +141,7 @@ double CardinalityEstimator::ComputeCost(JoinNode *left, JoinNode *right, double
 }
 
 double CardinalityEstimator::EstimateCrossProduct(const JoinNode *left, const JoinNode *right) {
-	// need to explicity use double here, otherwise auto converts it to an int, then
+	// need to explicitly use double here, otherwise auto converts it to an int, then
 	// there is an autocast in the return.
 	return left->GetCardinality() >= (NumericLimits<double>::Maximum() / right->GetCardinality())
 	           ? NumericLimits<double>::Maximum()
