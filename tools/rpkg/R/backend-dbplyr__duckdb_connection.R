@@ -369,7 +369,7 @@ sql_escape_datetime.duckdb_connection <- function(con, x) {
 # Customized translation for fill function
 # @param .con A \code{\link{dbConnect}} object, as returned by \code{dbConnect()}
 # @param .data Data frame
-# @param cols_to_fill Which colums to be altered
+# @param cols_to_fill Which columns to be altered
 # @param order_by_cols Defined order of variables
 # @param .direction Direction in which to fill missing values.
 # @name dbplyr_fill0

@@ -1149,7 +1149,7 @@ ValueComparisonResult CompareValueInformation(ExpressionValueInformation &left, 
 //	auto &conjunctions_to_push = entry->second.back();
 //
 //	if (!cur_colref_to_push->Equals(column_ref)) {
-//		// check for multiple colunms in the same root OR node
+//		// check for multiple columns in the same root OR node
 //		if (cur_root_or == cur_conjunction) {
 //			return false;
 //		}
