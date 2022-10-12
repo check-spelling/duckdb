@@ -4,7 +4,7 @@ inputs:
   # Test config
   run_tests:
     description: 'Run extension tests after build'
-    default: 1
+    default: '1'
 
   # Deploy config
   deploy_as:
@@ -26,10 +26,10 @@ inputs:
   # Build config
   force_32_bit:
     description: 'Force the 32 bit build'
-    default: 0
+    default: '0'
   static_link_build:
     description: 'Links duckdb statically to the built extensions'
-    default: 1
+    default: '1'
   build_dir:
     description: 'DuckDB source directory to run the build in'
     default: '.'
@@ -41,34 +41,34 @@ inputs:
     default: ''
   treat_warn_as_error:
     description: 'Treat compilation warnings as errors'
-    default: 1
+    default: '1'
   visualizer:
     description: 'Build Visualizer'
-    default: 1
+    default: '1'
   icu:
     description: 'Build ICU'
-    default: 1
+    default: '1'
   tpch:
     description: 'Build TPCH'
-    default: 1
+    default: '1'
   tpcds:
     description: 'Build TPCDS'
-    default: 1
+    default: '1'
   httpfs:
     description: 'Build HTTPFS'
-    default: 1
+    default: '1'
   fts:
     description: 'Build FTS'
-    default: 1
+    default: '1'
   json:
     description: 'Build JSON'
-    default: 1
+    default: '1'
   excel:
     description: 'Build Excel'
-    default: 1
+    default: '1'
   out_of_tree_ext:
     description: 'Build Out-Of-Tree Extensions'
-    default: 1
+    default: '1'
   python_name:
     description: 'Python binary name because wtf Python'
     default: 'python3'
@@ -77,7 +77,7 @@ inputs:
     default: 0
   aarch64_cross_compile:
     description: 'Enable Linux aarch64 cross-compiling'
-    default: 0
+    default: '0'
 
 runs:
   using: "composite"
