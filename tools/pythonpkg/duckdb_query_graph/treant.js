@@ -450,7 +450,7 @@
 					this.setConnectionToParent(node, hidePoint); // skip the root node
 				} 
 				else if (!this.CONFIG.hideRootNode && node.drawLineThrough) {
-					// drawlinethrough is performed for for the root node also
+					// drawlinethrough is performed for the root node also
 					node.drawLineThroughMe();
 				}
 			}
