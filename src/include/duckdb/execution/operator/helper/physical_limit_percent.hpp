@@ -13,7 +13,7 @@
 
 namespace duckdb {
 
-//! PhyisicalLimitPercent represents the LIMIT PERCENT operator
+//! PhysicalLimitPercent represents the LIMIT PERCENT operator
 class PhysicalLimitPercent : public PhysicalOperator {
 public:
 	PhysicalLimitPercent(vector<LogicalType> types, double limit_percent, idx_t offset,

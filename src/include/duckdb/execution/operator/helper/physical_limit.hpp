@@ -13,7 +13,7 @@
 
 namespace duckdb {
 
-//! PhyisicalLimit represents the LIMIT operator
+//! PhysicalLimit represents the LIMIT operator
 class PhysicalLimit : public PhysicalOperator {
 public:
 	PhysicalLimit(vector<LogicalType> types, idx_t limit, idx_t offset, unique_ptr<Expression> limit_expression,
