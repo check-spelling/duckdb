@@ -72,7 +72,7 @@
  */
 typedef struct TDEF_T {
 	char *name;        /* -- name of the table; */
-	char *abreviation; /* -- shorthand name of the table */
+	char *abbreviation; /* -- shorthand name of the table */
 	int flags;         /* -- control table options */
 	int nFirstColumn;  /* -- first column/RNG for this table */
 	int nLastColumn;   /* -- last column/RNG for this table */

@@ -57,7 +57,7 @@ const int cACL_len = 4;
 const int cAD_NAME_len = 80;
 const int cAD_LINE_len = 80;
 const int cAD_TOWN_len = cTOWN_len;
-const int cAD_DIV_len = cDIV_len; // state/provice abreviation
+const int cAD_DIV_len = cDIV_len; // state/provice abbreviation
 const int cAD_ZIP_len = cCODE_len;
 const int cAD_CTRY_len = 80;
 
