@@ -37,7 +37,7 @@ public:
 	SQLRETURN IsValidPtrForSpecificedField(SQLPOINTER value_ptr, FIELD_TYPE target_field,
 	                                       const std::vector<FIELD_TYPE> vec_field_ids) {
 		for (auto field_id : vec_field_ids) {
-			// target field doens't accept null_ptr
+			// target field doesn't accept null_ptr
 			if (field_id == target_field && value_ptr == nullptr) {
 				return SQL_ERROR;
 			}
