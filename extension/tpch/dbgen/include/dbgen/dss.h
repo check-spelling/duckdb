@@ -156,7 +156,7 @@ void agg_str PROTO((distribution * set, long count, seed_t *seed, char *dest));
 void read_dist PROTO((const char *path, const char *name, distribution *target));
 void embed_str PROTO((distribution * d, int min, int max, int stream, char *dest));
 #ifndef STDLIB_HAS_GETOPT
-int getopt PROTO((int arg_cnt, char **arg_vect, char *oprions));
+int getopt PROTO((int arg_cnt, char **arg_vect, char *options));
 #endif /* STDLIB_HAS_GETOPT */
 DSS_HUGE set_state PROTO((int t, long scale, long procs, long step, DSS_HUGE *e, DBGenContext *ctx));
 
