@@ -6,7 +6,7 @@ set -ex
 # https://mypy.readthedocs.io/en/stable/stubgen.html .
 # Stubs are written to
 OUTPUT_DIR="tools/pythonpkg/duckdb-stubs"
-# which is installed as an auxilliary package in the duckdb egg.
+# which is installed as an auxiliary package in the duckdb egg.
 
 # Unfortunately, stubgen is good but not quite perfect, and
 # the stubs it generates need a little bit of tweaking, which
