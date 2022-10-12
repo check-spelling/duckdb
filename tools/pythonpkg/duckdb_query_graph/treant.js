@@ -897,7 +897,7 @@
 			return parent.collapsedParent();
 		},
 
-		leftMost: function ( level, depth ) { // returns the leftmost child at specific level, (initaial level = 0)
+		leftMost: function ( level, depth ) { // returns the leftmost child at specific level, (initial level = 0)
 
 			if( level >= depth ) return this;
 			if( this.childrenCount() === 0 ) return;
