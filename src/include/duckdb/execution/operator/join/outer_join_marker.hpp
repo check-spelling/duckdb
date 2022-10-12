@@ -39,7 +39,7 @@ public:
 	//! Resets the outer join counter
 	void Reset();
 
-	//! Sets an indiivdual match
+	//! Sets an individual match
 	void SetMatch(idx_t position);
 
 	//! Sets multiple matches
