@@ -83,7 +83,7 @@ jobs:
         zip -j duckdb_odbc-linux-amd64.zip build/release/tools/odbc/libduckdb_odbc.so tools/odbc/linux_setup/unixodbc_setup.sh
         python3.7 scripts/asset-upload-gha.py libduckdb-src.zip libduckdb-linux-amd64.zip duckdb_cli-linux-amd64.zip  duckdb_jdbc-linux-amd64.jar=build/release/tools/jdbc/duckdb_jdbc.jar duckdb_odbc-linux-amd64.zip
 
-    - uses: actions/upload-artifact@v2
+    - uses: actions/upload-artifact@v3
       with:
         name: duckdb-binaries-linux
         path: |
@@ -150,7 +150,7 @@ jobs:
          zip -j libduckdb-linux-aarch64.zip build/release/src/libduckdb*.so src/amalgamation/duckdb.hpp src/include/duckdb.h
          python3.7 scripts/asset-upload-gha.py libduckdb-linux-aarch64.zip duckdb_cli-linux-aarch64.zip duckdb_odbc-linux-aarch64.zip duckdb_jdbc-linux-aarch64.jar=build/release/tools/jdbc/duckdb_jdbc.jar
 
-     - uses: actions/upload-artifact@v2
+     - uses: actions/upload-artifact@v3
        with:
          name: duckdb-binaries-linux-aarch64
          path: |
@@ -181,7 +181,7 @@ jobs:
         s3_key: ${{ secrets.S3_KEY }}
         signing_pk: ${{ secrets.DUCKDB_EXTENSION_SIGNING_PK }}
 
-    - uses: actions/upload-artifact@v2
+    - uses: actions/upload-artifact@v3
       with:
         name: linux-extensions-64
         path: |
@@ -220,7 +220,7 @@ jobs:
           aarch64_cross_compile: 1
           run_tests: 0 # Cannot run tests here due to cross-compiling
 
-      - uses: actions/upload-artifact@v2
+      - uses: actions/upload-artifact@v3
         with:
           name: linux-extensions-64-aarch64
           path: |
@@ -302,13 +302,13 @@ jobs:
         zip -j libduckdb-linux-i386.zip build/release/src/libduckdb*.so src/amalgamation/duckdb.hpp src/include/duckdb.h
         python3.7 scripts/asset-upload-gha.py libduckdb-linux-i386.zip duckdb_cli-linux-i386.zip duckdb_jdbc-linux-i386.jar=build/release/tools/jdbc/duckdb_jdbc.jar
 
-    - uses: actions/upload-artifact@v2
+    - uses: actions/upload-artifact@v3
       with:
         name: duckdb-binaries-linux
         path: |
           libduckdb-linux-i386.zip
           duckdb_cli-linux-i386.zip
-    - uses: actions/upload-artifact@v2
+    - uses: actions/upload-artifact@v3
       with:
         name: duckdb-binaries-linux-32bit
         path: |
@@ -357,7 +357,7 @@ jobs:
         zip -j libduckdb-linux-rpi.zip build/release/src/libduckdb*.so src/amalgamation/duckdb.hpp src/include/duckdb.h
         python scripts/asset-upload-gha.py libduckdb-linux-rpi.zip duckdb_cli-linux-rpi.zip
 
-    - uses: actions/upload-artifact@v2
+    - uses: actions/upload-artifact@v3
       with:
         name: duckdb-binaries-rpi
         path: |
@@ -509,7 +509,7 @@ jobs:
         zip -j duckdb-wasm32-nothreads.zip ./.wasm/build/duckdb.wasm
         python scripts/asset-upload-gha.py duckdb-wasm32-nothreads.zip
 
-    - uses: actions/upload-artifact@v2
+    - uses: actions/upload-artifact@v3
       with:
         name: duckdb-wasm32-nothreads
         path: |
