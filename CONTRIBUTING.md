@@ -20,7 +20,7 @@ This project and everyone participating in it is governed by a [Code of Conduct]
 
 ## Outside Contributors
 
-* Discuss your intended changes with the core team on Github
+* Discuss your intended changes with the core team on GitHub
 * Announce that you are working or want to work on a specific issue
 * Avoid large pull requests - they are much less likely to be merged as they are incredibly hard to review
 

@@ -141,7 +141,7 @@ def extract_github_issues(shell):
 
 def file_issue(cmd, error_msg, fuzzer, seed, hash):
     # issue is new, file it
-    print("Filing new issue to Github")
+    print("Filing new issue to GitHub")
 
     title = error_msg
     body = fuzzer_desc.replace("${FUZZER}", fuzzer).replace("${FULL_HASH}", hash).replace("${SHORT_HASH}", hash[:5]).replace("${SEED}", str(seed))
