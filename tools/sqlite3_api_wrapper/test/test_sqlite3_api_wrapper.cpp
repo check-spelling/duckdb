@@ -155,7 +155,7 @@ TEST_CASE("Basic prepared statement usage", "[sqlite3wrapper]") {
 	REQUIRE(sqlite3_step(stmt.stmt) == SQLITE_ERROR);
 	REQUIRE(sqlite3_step(stmt.stmt) == SQLITE_ERROR);
 	REQUIRE(sqlite3_step(stmt.stmt) == SQLITE_ERROR);
-	// need to be prepare aggain
+	// need to be prepare again
 	REQUIRE(stmt.Prepare(db.db, "SELECT * FROM test WHERE i=CAST($1 AS INTEGER)", -1, nullptr) == SQLITE_OK);
 	REQUIRE(sqlite3_bind_text(stmt.stmt, 1, "2", -1, nullptr) == SQLITE_OK);
 	REQUIRE(sqlite3_step(stmt.stmt) == SQLITE_ROW);
