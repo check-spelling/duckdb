@@ -4,7 +4,7 @@
 
 //! ODBC stub functions not implemented yet,
 //! when implementing the function must be moved to the proper source file
-//! Using std::cout instead of throw execptions because of MVSC's warning C4297
+//! Using std::cout instead of throw exceptions because of MVSC's warning C4297
 
 SQLRETURN SQL_API SQLNativeSql(SQLHDBC connection_handle, SQLCHAR *in_statement_text, SQLINTEGER text_length1,
                                SQLCHAR *out_statement_text, SQLINTEGER buffer_length, SQLINTEGER *text_length2_ptr) {
