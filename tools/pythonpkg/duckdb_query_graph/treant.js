@@ -437,7 +437,7 @@
 					node.hide(hidePoint);
 
 				} else if(node.positioned) {
-					// node is allready positioned, 
+					// node is already positioned, 
 					node.show();
 				} else { // inicijalno stvaranje nodeova, postavi lokaciju
 					node.nodeDOM.style.left = node.X + 'px';
@@ -518,7 +518,7 @@
 							this.getPathString(parent, node, stacked);
 
 			if (this.connectionStore[node.id]) {
-				// connector allready exists, update the connector geometry
+				// connector already exists, update the connector geometry
 				connLine = this.connectionStore[node.id];
 				this.animatePath(connLine, pathString);
 
