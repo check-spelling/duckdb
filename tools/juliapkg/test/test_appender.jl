@@ -62,7 +62,7 @@ end
 #     # Destroy the appender and flush the data
 #     DuckDB.duckdb_appender_destroy(appender)
 #
-#     # Retrive the data from the table and store it in  a vector
+#     # Retrieve the data from the table and store it in  a vector
 #     df = DuckDB.toDataFrame(con, "select * from dtypes;")
 #     data = Matrix(df)
 #
