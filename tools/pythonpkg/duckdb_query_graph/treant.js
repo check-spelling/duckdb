@@ -61,7 +61,7 @@
 	/**
 	* ImageLoader constructor.
 	* @constructor
-	* ImageLoader is used for determening if all the images from the Tree are loaded.
+	* ImageLoader is used for determining if all the images from the Tree are loaded.
 	* 	Node size (width, height) can be correctly determined only when all inner images are loaded
 	*/
 	var ImageLoader = function() {
