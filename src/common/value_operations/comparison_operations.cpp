@@ -18,7 +18,7 @@ struct ValuePositionComparator {
 	}
 
 	// Select the positional Values that need further testing.
-	// Usually this means Is Not Distinct, as those are the semantics used by Postges
+	// Usually this means Is Not Distinct, as those are the semantics used by Postgres
 	template <typename OP>
 	static inline bool Possible(const Value &lhs, const Value &rhs) {
 		return ValueOperations::NotDistinctFrom(lhs, rhs);

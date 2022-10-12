@@ -341,7 +341,7 @@ struct PositionComparator {
 	}
 
 	// Select the possible rows that need further testing.
-	// Usually this means Is Not Distinct, as those are the semantics used by Postges
+	// Usually this means Is Not Distinct, as those are the semantics used by Postgres
 	template <typename OP>
 	static idx_t Possible(Vector &left, Vector &right, const SelectionVector &sel, idx_t count,
 	                      SelectionVector &true_sel, SelectionVector *false_sel) {
