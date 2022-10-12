@@ -17,7 +17,7 @@ static DefaultOptimizerType internal_optimizer_types[] = {
     {"regex_range", OptimizerType::REGEX_RANGE},
     {"in_clause", OptimizerType::IN_CLAUSE},
     {"join_order", OptimizerType::JOIN_ORDER},
-    {"deliminator", OptimizerType::DELIMINATOR},
+    {"delimiter", OptimizerType::DELIMINATOR},
     {"unused_columns", OptimizerType::UNUSED_COLUMNS},
     {"statistics_propagation", OptimizerType::STATISTICS_PROPAGATION},
     {"common_subexpressions", OptimizerType::COMMON_SUBEXPRESSIONS},
