@@ -105,7 +105,7 @@ struct DBConfigOptions {
 	bool force_checkpoint = false;
 	//! Run a checkpoint on successful shutdown and delete the WAL, to leave only a single database file behind
 	bool checkpoint_on_shutdown = true;
-	//! Debug flag that decides when a checkpoing should be aborted. Only used for testing purposes.
+	//! Debug flag that decides when a checkpoint should be aborted. Only used for testing purposes.
 	CheckpointAbort checkpoint_abort = CheckpointAbort::NO_ABORT;
 	//! Initialize the database with the standard set of DuckDB functions
 	//! You should probably not touch this unless you know what you are doing
