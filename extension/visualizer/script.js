@@ -195,7 +195,7 @@ function update(e, source) {
     })
         .on('click', (e, d) => display_table(e, d));
 
-// Add backgroung circle
+// Add background circle
     nodeEnter.append("circle")
         .attr("r", 20)
         .attr("fill", "white")
