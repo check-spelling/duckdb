@@ -91,7 +91,7 @@ login_headers = {
 call("https://pypi.org/account/login/", login_data, login_headers)
 
 # delete gunk
-delete_crsf_token = get_token("https://pypi.org/manage/project/duckdb/releases/")
+delete_csrf_token = get_token("https://pypi.org/manage/project/duckdb/releases/")
 delete_headers = {
 	"Referer": "https://pypi.org/manage/project/duckdb/releases/"}
 
@@ -101,7 +101,7 @@ for rev in to_delete:
 	try:
 		delete_data = urllib.parse.urlencode({
 			"confirm_delete_version" : rev,
-			"csrf_token" : delete_crsf_token
+			"csrf_token" : delete_csrf_token
 		}).encode()
 		call("https://pypi.org/manage/project/duckdb/release/%s/" % rev, delete_data, delete_headers)
 	except Exception as e:
