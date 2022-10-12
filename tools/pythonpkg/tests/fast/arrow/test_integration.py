@@ -93,7 +93,7 @@ class TestArrowIntegration(object):
         assert (arrow_result[2] == 'DECIMAL(18,2)')
         assert (arrow_result[3] == 'DECIMAL(30,2)')
 
-        #Lets also test big number comming from arrow land
+        #Lets also test big number coming from arrow land
         data = (pyarrow.array(np.array([9999999999999999999999999999999999]), type=pyarrow.decimal128(38,0)))
         arrow_tbl = pyarrow.Table.from_arrays([data],['a'])
         duckdb_conn = duckdb.connect()
