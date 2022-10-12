@@ -20,7 +20,7 @@ class PreparedStatementData;
 //! A prepared statement
 class PreparedStatement {
 public:
-	//! Create a successfully prepared prepared statement object with the given name
+	//! Create a successfully prepared statement object with the given name
 	DUCKDB_API PreparedStatement(shared_ptr<ClientContext> context, shared_ptr<PreparedStatementData> data,
 	                             string query, idx_t n_param);
 	//! Create a prepared statement that was not successfully prepared
