@@ -66,7 +66,7 @@ const std::unordered_map<SQLStateType, SQLState, duckdb::EnumClassHash> OdbcDiag
     {SQLStateType::COUNT_FIELD_INCORRECT, {"07002", "COUNT field incorrect"}},
     {SQLStateType::PREPARE_STMT_NO_CURSOR, {"07005", "Prepared statement not a cursor-specification"}},
     {SQLStateType::RESTRICTED_DATA_TYPE, {"07006", "Restricted data type attribute violation"}},
-    {SQLStateType::RETRICT_PARAMETER_VALUE, {"07007", "Restricted parameter value violation"}},
+    {SQLStateType::RESTRICT_PARAMETER_VALUE, {"07007", "Restricted parameter value violation"}},
     {SQLStateType::INVALID_DESC_INDEX, {"07009", "Invalid descriptor index"}},
     {SQLStateType::INVALID_USE_DEFAULT_PARAMETER, {"07S01", "Invalid use of default parameter"}},
     {SQLStateType::CLIENT_UNABLE_TO_CONNECT, {"08001", "Client unable to establish connection"}},
