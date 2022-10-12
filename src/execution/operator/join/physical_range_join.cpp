@@ -70,7 +70,7 @@ void PhysicalRangeJoin::GlobalSortedTable::Combine(LocalSortedTable &ltable) {
 	count += ltable.count;
 }
 
-void PhysicalRangeJoin::GlobalSortedTable::IntializeMatches() {
+void PhysicalRangeJoin::GlobalSortedTable::InitializeMatches() {
 	found_match = unique_ptr<bool[]>(new bool[Count()]);
 	memset(found_match.get(), 0, sizeof(bool) * Count());
 }

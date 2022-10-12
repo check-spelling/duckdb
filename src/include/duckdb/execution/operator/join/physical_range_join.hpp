@@ -69,7 +69,7 @@ public:
 		}
 
 		void Combine(LocalSortedTable &ltable);
-		void IntializeMatches();
+		void InitializeMatches();
 		void Print();
 
 		//! Starts the sorting process.

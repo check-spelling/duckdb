@@ -139,7 +139,7 @@ SinkFinalizeType PhysicalPiecewiseMergeJoin::Finalize(Pipeline &pipeline, Event 
 
 	if (IsRightOuterJoin(join_type)) {
 		// for FULL/RIGHT OUTER JOIN, initialize found_match to false for every tuple
-		gstate.table->IntializeMatches();
+		gstate.table->InitializeMatches();
 	}
 	if (global_sort_state.sorted_blocks.empty() && EmptyResultIfRHSIsEmpty()) {
 		// Empty input!
