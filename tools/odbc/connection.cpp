@@ -746,7 +746,7 @@ SQLRETURN SQL_API SQLGetInfo(SQLHDBC connection_handle, SQLUSMALLINT info_type, 
 		return SQL_SUCCESS;
 	}
 	case SQL_MULT_RESULT_SETS: {
-		// saying NO beucase of SQLite
+		// saying NO because of SQLite
 		duckdb::OdbcUtils::WriteString(no_str, (SQLCHAR *)info_value_ptr, buffer_length, string_length_ptr);
 		return SQL_SUCCESS;
 	}
