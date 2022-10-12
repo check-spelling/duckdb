@@ -9,7 +9,7 @@
  * THE TPC SOFTWARE IS AVAILABLE WITHOUT CHARGE FROM TPC.
  */
 /*
- * text.c --- pseaudo text generator for use in DBGEN 2.0
+ * text.c --- pseudo text generator for use in DBGEN 2.0
  *
  * Defined Routines:
  *		dbg_text() -- select and translate a sentance form
