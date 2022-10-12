@@ -3934,7 +3934,7 @@
                     delete schedules[i];
                 }
 
-                // Cancel any pre-empted transitions.
+                // Cancel any preempted transitions.
                 else if (+i < id) {
                     o.state = ENDED;
                     o.timer.stop();
