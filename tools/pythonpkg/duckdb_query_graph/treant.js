@@ -537,7 +537,7 @@
 			}
 		},
 
-		// create the parh which is represanted as a point, used for hideing the connection
+		// create the parh which is represanted as a point, used for hiding the connection
 		getPointPathString: function(hp) {
 			// "_" indicates the path will be hidden
 			return ["_M", hp.x, ",", hp.y, 'L', hp.x, ",", hp.y, hp.x, ",", hp.y].join(" ");
@@ -554,7 +554,7 @@
 				path: pathString.charAt(0) === "_" ? pathString.substring(1) : pathString // remove the "_" prefix if it exists
 			}, this.CONFIG['animation']['connectorsSpeed'],  this.CONFIG['animation']['connectorsAnimation'],
 			function(){
-				if(pathString.charAt(0) === "_") { // animation is hideing the path, hide it at the and of animation
+				if(pathString.charAt(0) === "_") { // animation is hiding the path, hide it at the and of animation
 					path.hide();
 					path.hidden = true;
 				}
