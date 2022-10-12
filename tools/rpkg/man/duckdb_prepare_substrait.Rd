@@ -11,7 +11,7 @@ duckdb_prepare_substrait(conn, query, arrow = FALSE)
 \arguments{
 \item{conn}{A DuckDB connection, created by \code{dbConnect()}.}
 
-\item{query}{The Protobuf-encoded Substrait Query Plan. Qack!}
+\item{query}{The Protobuf-encoded Substrait Query Plan. Quack!}
 
 \item{arrow}{Whether the result should be in Arrow format}
 }

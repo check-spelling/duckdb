@@ -3,7 +3,7 @@
 #' It interprets and executes the query.
 #'
 #' @param conn A DuckDB connection, created by `dbConnect()`.
-#' @param query The Protobuf-encoded Substrait Query Plan. Qack!
+#' @param query The Protobuf-encoded Substrait Query Plan. Quack!
 #' @param arrow Whether the result should be in Arrow format
 #' @return A DuckDB Query Result
 #' @export
