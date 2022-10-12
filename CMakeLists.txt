@@ -703,7 +703,7 @@ function(build_loadable_extension_directory NAME OUTPUT_DIRECTORY PARAMETERS)
   # loadable extension binaries can be built two ways:
   # 1. EXTENSION_STATIC_BUILD=1
   #    DuckDB is statically linked into each extension binary. This increases portability because in several situations
-  #    DuckDB itself may have been loaded with RTLD_LOCAL. This is currently the main way we distribute the lodable
+  #    DuckDB itself may have been loaded with RTLD_LOCAL. This is currently the main way we distribute the loadable
   #    extension binaries
   # 2. EXTENSION_STATIC_BUILD=0
   #    The DuckDB symbols required by the loadable extensions are left unresolved. This will reduce the size of the binaries
