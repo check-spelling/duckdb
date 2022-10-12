@@ -171,8 +171,8 @@ void TPCHExtension::Load(DuckDB &db) {
 
 	// create the TPCH_ANSWERS that returns the query result
 	TableFunction tpch_query_answer_func("tpch_answers", {}, TPCHQueryAnswerFunction, TPCHQueryAnswerBind, TPCHInit);
-	CreateTableFunctionInfo tpch_query_asnwer_info(tpch_query_answer_func);
-	catalog.CreateTableFunction(*con.context, &tpch_query_asnwer_info);
+	CreateTableFunctionInfo tpch_query_answer_info(tpch_query_answer_func);
+	catalog.CreateTableFunction(*con.context, &tpch_query_answer_info);
 
 	con.Commit();
 }

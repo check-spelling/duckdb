@@ -175,8 +175,8 @@ void TPCDSExtension::Load(DuckDB &db) {
 	// create the TPCDS_ANSWERS that returns the query result
 	TableFunction tpcds_query_answer_func("tpcds_answers", {}, TPCDSQueryAnswerFunction, TPCDSQueryAnswerBind,
 	                                      TPCDSInit);
-	CreateTableFunctionInfo tpcds_query_asnwer_info(tpcds_query_answer_func);
-	catalog.CreateTableFunction(*con.context, &tpcds_query_asnwer_info);
+	CreateTableFunctionInfo tpcds_query_answer_info(tpcds_query_answer_func);
+	catalog.CreateTableFunction(*con.context, &tpcds_query_answer_info);
 
 	con.Commit();
 }
