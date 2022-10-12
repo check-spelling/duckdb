@@ -155,7 +155,7 @@ int ld_region PROTO((code_t * c, int mode));
 
 /* speed seed - advances seeds `skip_count` times */
 long sd_nation(int child, DSS_HUGE skip_count, DBGenContext *ctx);
-long sd_region(int child, DSS_HUGE skip_coun, DBGenContext *ctx);
+long sd_region(int child, DSS_HUGE skip_count, DBGenContext *ctx);
 long sd_order(int child, DSS_HUGE skip_count, DBGenContext *ctx);
 long sd_line(int child, DSS_HUGE skip_count, DBGenContext *ctx);
 long sd_supp(int child, DSS_HUGE skip_count, DBGenContext *ctx);
