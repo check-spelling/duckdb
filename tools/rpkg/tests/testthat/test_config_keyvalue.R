@@ -7,7 +7,7 @@ test_that("configuration key value pairs work as expected", {
   drv <- duckdb::duckdb(config = list())
   duckdb::duckdb_shutdown(drv)
 
-  # but we should throw an error on non-existent options
+  # but we should throw an error on nonexistent options
   expect_error(duckdb::duckdb(config = list(a = "a")))
 
   # but setting a legal option is fine
