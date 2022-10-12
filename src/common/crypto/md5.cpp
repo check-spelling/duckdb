@@ -1,7 +1,7 @@
 /*
 ** This code taken from the SQLite test library.  Originally found on
 ** the internet.  The original header comment follows this comment.
-** The code is largerly unchanged, but there have been some modifications.
+** The code is largely unchanged, but there have been some modifications.
 */
 /*
  * This code implements the MD5 message-digest algorithm.
