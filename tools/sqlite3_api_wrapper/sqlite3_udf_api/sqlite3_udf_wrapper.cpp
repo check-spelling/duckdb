@@ -43,7 +43,7 @@ duckdb::scalar_function_t duckdb::SQLiteUDFWrapper::CreateSQLiteScalarFunction(d
 			context.isError = SQLITE_OK;
 			sqlite_udf(&context, argc, argv.get());
 
-			// check memory allocatated by the sqlite_values
+			// check memory allocated by the sqlite_values
 			// error set by the UDF
 			if (context.isError != SQLITE_OK) {
 				string str_msg;
