@@ -675,7 +675,7 @@
 
 		var self = this;
 
-		function itterateChildren(node, parentId) {
+		function iterateChildren(node, parentId) {
 
 			var newNode = self.createNode(node, parentId, tree, null);
 
@@ -705,7 +705,7 @@
 						newNode =  self.createNode(node['children'][i], newNode.id, tree, stack);
 						if((i + 1) < len) newNode.children = []; // last node cant have children
 					} else {
-						itterateChildren(node['children'][i], newNode.id);
+						iterateChildren(node['children'][i], newNode.id);
 					}
 				}
 			}
@@ -713,7 +713,7 @@
 
 		if (tree.CONFIG['animateOnInit']) nodeStructure['collapsed'] = true;
 
-		itterateChildren( nodeStructure, -1); // root node
+		iterateChildren( nodeStructure, -1); // root node
 
 		this.createGeometries(tree);
 	};
