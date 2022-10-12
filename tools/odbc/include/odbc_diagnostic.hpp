@@ -143,7 +143,7 @@ enum class SQLStateType : uint8_t {
 	DNS_ARCHITECTURE_MISMATCH =
 	    120, // {"IM014", "The specified DSN contains an architecture mismatch between the Driver and Application"},
 	CONNECT_HANDLE_DBC_INFO_FAIL = 121, // {"IM015", "Driver's SQLConnect on SQL_HANDLE_DBC_INFO_HANDLE failed"},
-	POLLING_DISABLED_ASYNC_NOTIGICATION_MODE =
+	POLLING_DISABLED_ASYNC_NOTIFICATION_MODE =
 	    122,                             // {"IM017", "Polling is disabled in asynchronous notification mode"},
 	SHOULD_CALL_COMPLETE_ASYNC = 123,    // {"IM018", "SQLCompleteAsync has not been called to complete the previous
 	                                     // asynchronous operation on this handle."},
